@@ -11,14 +11,17 @@ if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
     }
 
-$sql = "INSERT INTO messagelog (message)
-VALUES ('" . $message . "')";
-
-if ($con->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $con->error;
+$stmt = $con->prepare("INSERT INTO messagelog (message) VALUES (?)");
+$stmt->bind_param("s", $message);
+if ($stmt->execute(); === TRUE) {
+    echo "Success.";
+} 
+else {
+    echo "Error: " . "<br>" . $con->error;
 }
+
+$stmt->close();
+$conn->close();
 
 $con->close();
 ?>
