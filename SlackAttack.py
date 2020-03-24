@@ -31,7 +31,7 @@ appFile = verDir + "\\app-" + maxVer + "\\resources\\app.asar"
 extractFolder =  verDir + "\\app-" + maxVer + "\\resources\\"
 os.system("taskkill /IM slack.exe /F")
 extract_asar(appFile, extractFolder + "app")
-file = open(extractFolder + "app\\" + "dist\\main-preload-entry-point.bundle.js", 'a')
+file = open(extractFolder + "app\\" + "dist\\preload.bundle.js", 'a')
 file.write(cssBlock)
 file.close()
 os.system("del /f " + appFile)
