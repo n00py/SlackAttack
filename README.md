@@ -1,5 +1,7 @@
 # SlackAttack [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/) [![Canadian Mental Health Association](https://i.imgur.com/GvXBeY4.png)](https://cmha.ca/donate)
-Python software with a PHP webpanel that injects a JS keylogger into the Slack desktop client. This software is confirmed to be working with slack versions 4.3.4 and 4.4 beta 3.
+Python software with a PHP webpanel that injects a JS keylogger into the Slack desktop client. This software is confirmed to be working with slack versions 4.3.4 and 4.4.
+
+If you require SlackAttack for versions before 4.4, please see the releases. The master branch will only work with the newest version.
 
 # Setup
 
