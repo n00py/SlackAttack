@@ -21,7 +21,6 @@ else {
 }
 
 $stmt->close();
-$conn->close();
 
 $con->close();
 ?>
